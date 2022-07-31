@@ -14,7 +14,7 @@ layout = [
 ]
 
 #Creamos la ventana:
-window = sg.Window("Super Explorer", layout, icon="F:\Proyectos de python\OrdenarArchivos\icono.ico")
+window = sg.Window("Super Explorer", layout, icon="F:\Proyectos de git\Super-Explorer\icono.ico")
 
 #Event loop:
 while True:
