@@ -7,10 +7,10 @@ sg.theme("DarkBlack")
 
 #Crear diseño:
 layout = [
-    [sg.Radio('Ordenar en carpetas', "RADIO1", default=True, key="ordenar"), sg.Radio('Eliminar carpetas vacias', "RADIO1", default=False, key="eliminar")],
-    [sg.Text("Ingresa la ruta:")],
-    [sg.InputText(do_not_clear=False), sg.FolderBrowse("Buscar...")],
-    [sg.Button("Aceptar"), sg.Button("Cancelar")]
+    [sg.Push() ,sg.Radio('Ordenar en carpetas', "RADIO1", default=True, key="ordenar", font=("Fixedsys", 12)), sg.Radio('Eliminar carpetas vacias', "RADIO1", default=False, key="eliminar", font=("Fixedsys", 12)), sg.Push()],
+    [sg.Text("Ingresa la ruta:", font=("Fixedsys", 12,"bold"))],
+    [sg.InputText(do_not_clear=False), sg.FolderBrowse("Buscar...", font=("Fixedsys", 10))],
+    [sg.Button("Aceptar", font=("Fixedsys", 10)), sg.Button("Cancelar", font=("Fixedsys", 10))]
 ]
 
 #Creamos la ventana:
